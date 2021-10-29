@@ -12,7 +12,7 @@ create_release:
 
 upload_sourcemaps:
 	$(SENTRY_CLI) releases files \
-		$(VERSION) upload-sourcemaps --rewrite --validate $(PREFIX)
+		$(VERSION) upload-sourcemaps --url-prefix "~/" --rewrite --validate $(PREFIX)
 
 create_env:
 	@echo "version=${VERSION}" > .env
