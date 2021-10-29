@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 import { environment } from '../environments/environment';
 import { Integrations } from '@sentry/tracing';
 import { version } from '../environments/version';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 Sentry.init({
   dsn: environment.sentry_dsn,
@@ -30,7 +32,9 @@ Sentry.init({
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     {

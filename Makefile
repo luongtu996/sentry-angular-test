@@ -3,10 +3,7 @@
 #  SENTRY_AUTH_TOKEN
 PREFIX=dist
 SENTRY_CLI=./node_modules/.bin/sentry-cli
-VERSION=`$(SENTRY_CLI) releases new sentryTest@0.0.1`
-
-# setup_release:
-# 	echo "TODO: <PLACEHOLDER>"
+VERSION=`$(SENTRY_CLI) releases propose-version`
 
 setup_release: create_release upload_sourcemaps
 
