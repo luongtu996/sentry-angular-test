@@ -1,0 +1,8 @@
+[auth]
+token=7db82653a79842269371f8f32dfc16f97cbeccb0c29e42358d88d2322b61080f
+[defaults]
+url=https://sentry.io
+org=imath-solutions-pte-ltd
+project=heyhi-test
+[log]
+level=info|debug
