@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "config": "ts-node --project scripts/tsconfig.json scripts/bump-sentry.ts",
     "deploy-production": "make create_env && npm run config && ng build --configuration=production && make setup_release && npm run deploy",
-    "deploy": "serve -s dist"
+    "deploy": "serve -s dist/heyhi"
   },
   "private": true,
   "dependencies": {

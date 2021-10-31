@@ -1,7 +1,7 @@
 # Must have `sentry-cli` installed globally
 # Following variable must be passed in
 #  SENTRY_AUTH_TOKEN
-PREFIX=dist
+PREFIX=dist/heyhi
 SENTRY_CLI=./node_modules/.bin/sentry-cli
 VERSION=`$(SENTRY_CLI) releases propose-version`
 

@@ -1,1 +1,1 @@
-export const version = { release: '7e378fa900359543e3fd4f2e6d71e3f461cd5210' };
+export const version = { release: 'e29abc1e15d3fc071185a3ba381eea1c07a8d218' };
